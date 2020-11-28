@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Class Registration form</title>
+  </head>
+  <body>
+    <h1>Music Class Registration</h1>
+    <div class="container">
+      <form action="#" class="regForm">
+        <ul class="regForm__rows">
+          <li class="regForm__row">
+            <input
+              type="text"
+              placeholder="Firstname"
+              id="firstName"
+              required
+            /><input
+              type="text"
+              placeholder="Lastname"
+              id="LastName"
+              required
+            />
+          </li>
+          <li class="regForm__row">
+            <input placeholder="Date of Birth" type="date" id="dob" required />
+            <input
+              type="number"
+              placeholder="Phone number"
+              id="phNo"
+              required
+            />
+          </li>
+          <li class="regForm__row">
+            <input type="email" placeholder="example@email.com" id="email" />
+            <input type="text" placeholder="Place" id="place" />
+          </li>
+          <li class="regForm__row">
+            <select id="InstrChoice">
+              <option selected>Choice of Instrument</option>
+              <option value="">Guitar</option>
+              <option value="">Voilin</option>
+              <option value="">Drums</option>
+              <option value="">Piano</option>
+              <option value="">Saxaphone</option>
+            </select>
+            <select id="ClassTime">
+              <option selected>Select Time</option>
+              <option value="">10:00 - 11:00</option>
+              <option value="">11:00 - 12:00</option>
+              <option value="">14:00 - 15:00</option>
+              <option value="">15:00 - 16:00</option>
+              <option value="">16:30 - 17:30</option>
+              <option value="">17:30 - 18:30</option>
+            </select>
+          </li>
+          <li class="regForm__row">
+            <h4>Pick Days For Classes</h4>
+            <p class="classDay">
+              <input type="checkbox" name="" id="sun" />
+              <label for="sun">Sunday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="mon" />
+              <label for="mon">Monday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="tue" />
+              <label for="tue">Tuesday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="wed" />
+              <label for="wed">Wednesday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="thu" />
+              <label for="thu">Thursday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="fri" />
+              <label for="fri">Friday</label>
+            </p>
+            <p class="classDay">
+              <input type="checkbox" name="" id="sat" />
+              <label for="sat">Saturday</label>
+            </p>
+          </li>
+          <li class="regForm__row">
+            <textarea
+              placeholder="Message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </li>
+          <li class="regForm__row">
+            <button type="submit" class="regForm__btn">Submit</button>
+          </li>
+        </ul>
+      </form>
+      <div class="regImg"></div>
+    </div>
+  </body>
+</html>
